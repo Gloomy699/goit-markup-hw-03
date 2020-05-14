@@ -12,15 +12,24 @@
 /*акцент #2196F3*/
 /*цвет фона #2196F3*/
 /* добавил цвет фона везде где основной цвет БЕЛЫЙ */
+
 /*оформление главной страницы*/
 
 body {
   background-color: #ffffff;
   color: var(--primary-text-color);
   letter-spacing: 0.03em;
-
   font-family: Roboto, sans-serif;
 }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid skyblue;
+}
+
 /* убирает стилизацию списков */
 .list {
   list-style: none;
@@ -89,15 +98,26 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
 }
-.hero .primary-button {
+.button {
   background-color: var(--accent-color);
   color: var(--white-text-color);
 
-  font-weight: 700;
+  vertical-align: middle;
+  display: inline-block;
   font-size: 16px;
   line-height: 1.87;
   text-decoration: none;
   text-align: center;
+  border-radius: 4px;
+  min-width: 200px;
+  min-height: 50px;
+  letter-spacing: 0.06em;
+}
+
+.hero .button {
+  padding: 10px 32px;
+  font-weight: 700;
+  font-style: normal;
 }
 
 /* оформляет секцию преимуществ (оформляет логический заголовок, пока не знаю как его скрыть) */
@@ -208,14 +228,12 @@ body {
 
   color: var(--white-text-color);
 }
-.subscription .secondary-button {
-  background-color: var(--accent-color);
-  color: var(--white-text-color);
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  text-decoration: none;
+.subscription .button {
+  font-weight: 900;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 46px;
+  padding-right: 45px;
 }
 
 .dev-team {
@@ -238,6 +256,7 @@ body {
   color: var(--primary-text-color);
   background-color: #f5f4fa;
 
+  display: inline-block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
