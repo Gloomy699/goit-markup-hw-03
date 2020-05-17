@@ -79,9 +79,9 @@ body {
   letter-spacing: 0.06em;
 }
 
-/* img {
+img {
   display: block;
-} */
+}
 
 /* оформляет хедер */
 
@@ -115,7 +115,7 @@ body {
 
 /* оформляет навигацию */
 .page-header .link {
-  display: block;
+  display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -124,7 +124,7 @@ body {
   letter-spacing: 0.02em;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
 }
 .page-header .link:hover,
 .page-header .link:focus {
@@ -147,7 +147,8 @@ body {
 .page-header .contact {
   color: var(--secondary-text-color);
 
-  display: block;
+  display: inline-block;
+
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -207,13 +208,17 @@ body {
   margin-right: 0;
 }
 
+.page-advantages .logo {
+  margin-bottom: 30px;
+}
+
 .page-advantages .adv-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 10px;
 }
 .page-advantages .description {
@@ -230,9 +235,7 @@ body {
 .page-scils {
   padding-top: 0px;
 }
-.page-scils img {
-  display: block;
-}
+
 .page-scils .list {
   display: flex;
 }
@@ -240,8 +243,8 @@ body {
 .page-scils .item {
   width: 380px;
 }
-.page-scils .item + .item {
-  margin-left: 30px;
+.page-scils .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .page-scils > .title {
@@ -271,6 +274,9 @@ body {
 .page-team .list {
   display: flex;
 }
+.page-team .photo {
+  margin-bottom: 30px;
+}
 
 .page-team .title {
   margin-bottom: 50px;
@@ -293,8 +299,8 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  margin-top: 0;
   margin-bottom: 10px;
-  margin-top: 30px;
 }
 .page-team .text {
   color: var(--secondary-text-color);
@@ -308,7 +314,7 @@ body {
   margin-bottom: 16px;
   margin-top: 0px;
 }
-.page-team .soc-link {
+.soc-link .item {
   padding-bottom: 24px;
 }
 
@@ -337,6 +343,7 @@ body {
   padding-left: 65px;
   padding-bottom: 21px;
   padding-right: 65px;
+
   border: 1px solid var(--secondary-text-color);
   border-radius: 4px;
 }
@@ -399,8 +406,8 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.address .item + .item {
-  padding-top: 10px;
+.address .item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 /* оформляет призыв */
@@ -412,7 +419,7 @@ body {
 
 .social-link .join-in {
   text-transform: uppercase;
-  display: block;
+  display: inline-block;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -484,7 +491,7 @@ body {
 }
 /* оформляет фильтр */
 .filter-list {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .filter-list .list {
@@ -526,8 +533,8 @@ body {
   flex-wrap: wrap;
 }
 
-.page-portfolio img {
-  display: block;
+.page-portfolio .exemple {
+  margin-bottom: 20px;
 }
 .page-portfolio .item {
   border: 1px solid #eeeeee;
@@ -535,6 +542,7 @@ body {
   width: calc((100% - 2 * 30px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+  padding-bottom: 20px;
 }
 .page-portfolio .item:nth-child(3n) {
   margin-right: 0;
@@ -549,7 +557,6 @@ body {
   padding-left: 24px;
   padding-right: 24px;
   margin-bottom: 4px;
-  padding-top: 20px;
   margin-top: 0;
 
   color: var(--primary-text-color);
@@ -566,7 +573,6 @@ body {
   min-width: 332px;
   padding-left: 24px;
   padding-right: 24px;
-  padding-bottom: 20px;
 
   font-weight: 400;
   font-size: 16px;
