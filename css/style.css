@@ -232,9 +232,6 @@ img {
 }
 
 /* оформляет секцию навыков */
-.page-scils {
-  padding-top: 0px;
-}
 
 .page-scils .list {
   display: flex;
