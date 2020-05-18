@@ -553,10 +553,7 @@ img {
   border-top: 0;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding: 20px 24px;
 }
 
 .page-portfolio .title {
