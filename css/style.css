@@ -530,16 +530,12 @@ img {
   flex-wrap: wrap;
 }
 
-.page-portfolio .exemple {
-  margin-bottom: 20px;
-}
 .page-portfolio .item {
   border: 1px solid #eeeeee;
   border-radius: 4px;
   width: calc((100% - 2 * 30px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  padding-bottom: 20px;
 }
 .page-portfolio .item:nth-child(3n) {
   margin-right: 0;
@@ -548,11 +544,18 @@ img {
   margin-bottom: 0;
 }
 
-.page-portfolio .title {
-  display: block;
-  min-width: 332px;
+.page-portfolio .exemple {
+  margin-bottom: 20px;
+}
+
+.exemple-description {
   padding-left: 24px;
   padding-right: 24px;
+  padding-bottom: 20px;
+}
+
+.page-portfolio .title {
+  display: block;
   margin-bottom: 4px;
   margin-top: 0;
 
@@ -567,9 +570,6 @@ img {
 
 .page-portfolio .filter {
   display: block;
-  min-width: 332px;
-  padding-left: 24px;
-  padding-right: 24px;
 
   font-weight: 400;
   font-size: 16px;
@@ -580,6 +580,7 @@ img {
 
   color: var(--secondary-text-color);
 }
+
 .page-portfolio .text {
   display: none;
   color: var(--white-text-color);
