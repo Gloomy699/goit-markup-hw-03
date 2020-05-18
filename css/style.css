@@ -363,7 +363,9 @@ img {
 .container-adress {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
+  padding-top: 48px;
+  padding-bottom: 28px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -371,19 +373,17 @@ img {
 .address .site-logo {
   color: var(--white-text-color);
   font-size: 22px;
-  display: inline-block;
-  padding-bottom: 9px;
+  display: block;
+  margin-bottom: 10px;
+  margin-right: 0;
   padding-top: 0;
-}
-.container-adress .address {
-  padding-top: 48px;
-  padding-bottom: 28px;
+  padding-bottom: 0;
 }
 
 .address .city-adr {
   color: var(--white-text-color);
 
-  display: inline-block;
+  display: block;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -404,14 +404,14 @@ img {
   letter-spacing: 0.03em;
 }
 .address .item:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 
 /* оформляет призыв */
 
 .social-link {
-  padding-top: 56px;
-  padding-bottom: 56px;
+  /* padding-top: 56px;
+  padding-bottom: 56px; */
 }
 
 .social-link .join-in {
