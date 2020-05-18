@@ -25,13 +25,13 @@ body {
 /* -----УТИЛИТЫ------ */
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 
-  /* outline: 2px solid skyblue; */
+  outline: 2px solid skyblue;
 }
 
 /* убирает стилизацию списков */
@@ -200,7 +200,7 @@ img {
   display: flex;
 }
 .page-advantages .item {
-  width: 278px;
+  width: calc((100% - 3 * 30px) / 4);
   margin-right: 30px;
 }
 
@@ -241,7 +241,7 @@ img {
 }
 
 .page-scils .item {
-  width: 380px;
+  width: calc((100% - 2 * 30px) / 3);
 }
 .page-scils .item:not(:last-child) {
   margin-right: 30px;
@@ -329,7 +329,7 @@ img {
 }
 
 .soc-link > .item:not(:last-child) {
-  margin-right: 3px;
+  margin-right: 2px;
 }
 
 /* оформляет клиентов */
@@ -338,7 +338,7 @@ img {
 }
 
 .page-clients .item {
-  min-width: 175px;
+  width: calc((100% - 5 * 30px) / 6);
   padding-top: 21px;
   padding-left: 65px;
   padding-bottom: 21px;
