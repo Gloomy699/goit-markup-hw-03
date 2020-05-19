@@ -281,6 +281,7 @@ img {
 .team-list > .item {
   background-color: var(--white-text-color);
   border-radius: 4px;
+  padding-bottom: 24px;
 
   width: calc((100% - 3 * 30px) / 4);
   margin-right: 30px;
@@ -310,9 +311,6 @@ img {
   font-weight: 400;
   margin-bottom: 16px;
   margin-top: 0px;
-}
-.soc-link .item {
-  padding-bottom: 24px;
 }
 
 .soc-link .link {
@@ -408,11 +406,6 @@ img {
 }
 
 /* оформляет призыв */
-
-.social-link {
-  /* padding-top: 56px;
-  padding-bottom: 56px; */
-}
 
 .social-link .join-in {
   text-transform: uppercase;
