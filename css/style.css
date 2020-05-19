@@ -81,6 +81,8 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* оформляет хедер */
@@ -125,10 +127,13 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+
+  border-bottom: 2px solid transparent;
 }
 .page-header .link:hover,
 .page-header .link:focus {
   color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .main-nav .item:not(:last-child) {
@@ -210,6 +215,12 @@ img {
 
 .page-advantages .logo {
   margin-bottom: 30px;
+  padding: 25px 105px;
+  background-color: #f5f4fa;
+}
+.page-advantages .logo:focus,
+.page-advantages .logo:hover {
+  background-color: var(--accent-color);
 }
 
 .page-advantages .adv-title {
@@ -334,6 +345,8 @@ img {
 
 .page-clients .item {
   width: calc((100% - 5 * 30px) / 6);
+  justify-content: center;
+
   padding-top: 21px;
   padding-left: 65px;
   padding-bottom: 21px;
@@ -345,6 +358,7 @@ img {
 .page-clients .item:not(:last-child) {
   margin-right: 30px;
 }
+
 .page-clients .item:hover,
 .page-clients .item:focus {
   border: 1px solid var(--accent-color);
