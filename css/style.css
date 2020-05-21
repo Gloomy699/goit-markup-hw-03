@@ -196,9 +196,14 @@ img {
 
 /* оформляет секцию преимуществ (оформляет логический заголовок, пока не знаю как его скрыть) */
 .page-advantages .shadow {
-  color: rgba(47, 48, 58, 0.1);
-  margin-top: 0;
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .page-advantages .list {
@@ -484,9 +489,14 @@ img {
 /* оформляет страницу портфолио (оформляет логический заголовок, пока не знаю как его скрыть)*/
 
 .page-portfolio .shadow {
-  color: rgba(47, 48, 58, 0.1);
-  margin-top: 0;
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .portfolio {
